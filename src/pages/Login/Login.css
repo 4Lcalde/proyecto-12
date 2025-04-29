@@ -1,0 +1,35 @@
+.login-section {
+  display: flex;
+  min-height: 100svh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/assets/backgrounds/tablero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  backdrop-filter: blur(5px);
+}
+
+.h1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 1s ease-out;
+}
+
+.h1-container.shift {
+  transform: translateY(-50px);
+}
+
+#h1-global-title {
+  font-size: var(--font-h1);
+  font-weight: 700;
+  animation-name: introduction;
+  animation: introduction ease-out 1.5s;
+}
+
+#h1-global-title > span {
+  color: var(--text-highlight);
+}

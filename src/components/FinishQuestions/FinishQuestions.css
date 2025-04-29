@@ -1,0 +1,16 @@
+.div-infoFinish-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.finish-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 93svh;
+  gap: var(--gap-m);
+  text-align: center;
+  position: relative;
+  justify-content: center;
+}

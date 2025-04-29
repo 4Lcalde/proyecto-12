@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  font: 'times new roman';
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  /*  Colores de fondo claro */
+  --bg-light: #f3f1ed;
+  --bg-accent: #e67f2b;
+  --bg-card: #8768f8;
+  --bg-element: #a18fe3;
+
+  /*  Colores de texto */
+  --text: #2c3e50;
+  --text-light: #f3f1ed;
+  --text-muted: #7f8c8d;
+  --text-highlight: #7e68f8;
+  --text-error: #c21616;
+  --text-error-hover: #920a0a;
+
+  /*  Colores Trivial */
+  --trivial-blue: #4a90e2; /* Geografía */
+  --trivial-pink: #ff4f8b; /* Entretenimiento */
+  --trivial-yellow: #f8c300; /* Historia */
+  --trivial-orange: #ff7b00; /* Arte y Literatura */
+  --trivial-green: #00b894; /* Ciencia y Naturaleza */
+  --trivial-purple: #9b59b6; /* Deportes y Ocio */
+
+  /*  Modo oscuro  */
+  --bg-dark-mode: #1c2333;
+  --bg-dark-accent: #2f3b54;
+  --text-dark-mode: #e4e8f0;
+  --text-dark-muted: #a5b1c2;
+  --text-highlight-dark: #ffcc00;
+
+  /*  Tamaños de fuente */
+  --font-h1: 3rem;
+  --font-h2: 2.5rem;
+  --font-h3: 1.5rem;
+  --font-h4: 1.15rem;
+  --font-p: 1rem;
+
+  /* Espaciados*/
+  /* Padding */
+  --padding-s: 0.5rem;
+  --padding-m: 1rem;
+  --padding-l: 2rem;
+  --padding-xl: 3rem;
+
+  /* Margin */
+  --margin-s: 0.5rem;
+  --margin-m: 1rem;
+  --margin-l: 2rem;
+  --margin-xl: 3rem;
+
+  /* Gap */
+  --gap-s: 0.5rem;
+  --gap-m: 1rem;
+  --gap-l: 2rem;
+  --gap-xl: 3rem;
+}

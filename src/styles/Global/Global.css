@@ -1,0 +1,154 @@
+/* CONFIGURACIONES GLOBALES DE MODO */
+body {
+  transition: background-color 1s, color 0.5s;
+}
+
+body.chakra-ui-dark {
+  color: var(--text-dark-mode);
+}
+
+body.chakra-ui-light {
+  color: var(--text);
+}
+
+/* ESTILOS GLOBALES */
+
+/*! SECTION GLOBAL */
+
+.global-section {
+  min-height: 100svh;
+}
+
+/* CONFIGURACIONES GLOBALES DE TEXTO */
+
+/* ! H2  */
+
+.h2-global-title {
+  font-size: var(--font-h2);
+  font-weight: 500;
+}
+
+/* ! H3  */
+.h3-global-title {
+  font-size: var(--font-h3);
+  font-weight: 500;
+}
+
+/* ! H4  */
+.h4-global-title {
+  font-size: var(--font-h4);
+  font-weight: 400;
+}
+
+/* ! P GLOBAL  */
+.p-global {
+  font-size: var(--font-p);
+  font-weight: 300;
+}
+
+.p-global > span {
+  font-size: var(--font-p);
+  font-weight: 500;
+}
+
+/*! TEXTO DE ERROR  */
+
+.p-error {
+  color: var(--text-error);
+}
+
+/* BOTONES */
+
+.general-button {
+  color: var(--bg-card);
+  background-color: var(--bg-light);
+  width: auto;
+  border: 2px solid var(--bg-card);
+  padding: var(--padding-s) var(--padding-m);
+  border-radius: 10px;
+}
+
+.general-button:hover {
+  color: var(--bg-light);
+  background-color: var(--bg-card);
+}
+
+.secundary-button {
+  color: var(--bg-light);
+  background-color: var(--bg-card);
+  width: auto;
+  border: 2px solid var(--bg-card);
+  padding: var(--padding-s) var(--padding-m);
+  border-radius: 10px;
+}
+
+.secundary-button:hover {
+  background-color: var(--bg-element);
+}
+
+.red-button {
+  color: var(--text-light);
+  background-color: var(--text-error);
+  width: auto;
+  border: 2px solid var(--text-error);
+  padding: var(--padding-s) var(--padding-m);
+  border-radius: 10px;
+}
+
+.red-button:hover {
+  background-color: var(--text-error-hover);
+  border: 2px solid var(--bg-light);
+  border-radius: 10px;
+}
+
+/* ANIMACIONES */
+
+/* ! ANIMACION ENTRADA */
+
+@keyframes introduction {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ! ANIMACION LATIDO */
+@keyframes latido {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 900px) {
+  /* TITULOS */
+  :root {
+    --font-h1: 2.5rem;
+    --font-h2: 2.25rem;
+    --font-h3: 1.3rem;
+    --font-h4: 1.12rem;
+    --font-p: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  /* TITULOS */
+  :root {
+    --font-h1: 2rem;
+    --font-h2: 1.75rem;
+    --font-h3: 1.1rem;
+    --font-h4: 1.05rem;
+    --font-p: 1rem;
+  }
+
+  .h2-global-title {
+    text-wrap: wrap;
+  }
+}

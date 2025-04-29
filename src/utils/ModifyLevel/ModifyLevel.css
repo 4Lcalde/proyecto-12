@@ -1,0 +1,50 @@
+#modal-modify-level {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  backdrop-filter: blur(6px);
+  z-index: 1;
+  border: 2px solid var(--text);
+  border-radius: 20px;
+  background-color: var(--bg-dark-accent);
+}
+
+#modal-modify-level span {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: var(--text-error);
+  padding: var(--padding-s) var(--padding-m);
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+#modal-modify-level span:hover {
+  background-color: var(--text-error-hover);
+  border: 2px solid var(--bg-light);
+  border-radius: 10px;
+}
+.div-modify-level {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  height: 50svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: var(--gap-m);
+}
+
+.div-modify-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-m);
+}
+
+.div-buttons-container {
+  display: flex;
+}

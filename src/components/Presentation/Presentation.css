@@ -1,0 +1,29 @@
+.presentation-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  min-height: 60svh;
+  padding: var(--padding-m) var(--padding-l);
+  gap: var(--gap-m);
+  border: 3px solid var(--bg-element);
+  border-radius: 50px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: subida 1.5s forwards ease-out;
+}
+
+#button-start {
+  width: 120px;
+  margin: auto;
+}
+
+@keyframes subida {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,16 @@
+.article-logOut {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  height: 93svh;
+  gap: var(--gap-l);
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
