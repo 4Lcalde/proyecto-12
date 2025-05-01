@@ -3,16 +3,18 @@ import { selectDificulty } from '../../data/info/info'
 import './ModifyLevel.css'
 import React, { useRef } from 'react'
 import { changeDificulty } from '../changeDificulty/changeDificulty'
+import UseCloseElements from '../../Custom/CloseElements/CloseElements'
 
-const ModifyLevel = ({ isOpen, closeModal }) => {
+const ModifyLevel = ({ isOpen, setIsOpen, closeModal }) => {
   const refInput = useRef()
   const navigate = useNavigate()
-
+  const refDialog = useRef()
+  UseCloseElements(open, setIsOpen, refDialog)
   if (!isOpen) return null
 
   return (
     <>
-      <dialog open={isOpen} id='modal-modify-level'>
+      <dialog open={isOpen} id='modal-modify-level' ref={refDialog}>
         <span onClick={closeModal}>X</span>
         <div className='div-modify-level'>
           <label htmlFor='level' className='h3-global-title'>

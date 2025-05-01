@@ -11,7 +11,7 @@ const Presentation = ({ dispatch }) => {
         </h3>
         <div>
           <h4 className='h4-global-title'>Las reglas son sencillas:</h4>
-          <ul>
+          <ul className='ul-rules'>
             <li className='p-global'>
               Has seleccionado jugar en nivel
               <span>

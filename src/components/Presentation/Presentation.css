@@ -1,3 +1,7 @@
+.game-section {
+  padding: var(--padding-m);
+}
+
 .presentation-container {
   display: flex;
   flex-direction: column;
@@ -10,6 +14,10 @@
   opacity: 0;
   transform: translateY(50px);
   animation: subida 1.5s forwards ease-out;
+}
+
+.ul-rules {
+  gap: var(--gap-m);
 }
 
 #button-start {
@@ -25,5 +33,38 @@
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media (max-width: 900px) {
+  .game-section {
+    height: auto;
+  }
+
+  .presentation-container {
+    height: auto;
+  }
+  .game-section .h2-global-title {
+    text-align: center;
+  }
+
+  .game-section .h3-global-title {
+    text-align: center;
+  }
+
+  .game-section .h4-global-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .game-section {
+    height: auto;
+    min-height: 100svh;
+    padding-top: 5svh;
+  }
+
+  .presentation-container {
+    height: auto;
   }
 }

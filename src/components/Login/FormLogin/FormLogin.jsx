@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react'
 import { useForm } from 'react-hook-form'
-import { avatarProfiles, selectDificulty } from '../../../data/info/info'
+import { selectDificulty } from '../../../data/info/info'
 import './FormLogin.css'
 
 import {

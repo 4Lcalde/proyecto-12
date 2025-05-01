@@ -43,6 +43,7 @@ const FinishQuestions = () => {
         </div>
         <ModifyLevel
           isOpen={isOpen}
+          setIsOpen={setIsOpen}
           closeModal={() => {
             setIsOpen(false)
           }}

@@ -1,11 +1,17 @@
 import { NavLink } from 'react-router-dom'
 import './Header.css'
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import CloseElements from '../../Custom/CloseElements/CloseElements'
+import UseCloseElements from '../../Custom/CloseElements/CloseElements'
 
 const Header = () => {
   const [open, setOpen] = useState(false)
+  const headerElement = useRef(null)
+
+  UseCloseElements(open, setOpen, headerElement)
+
   return (
-    <header id={open ? 'header-open' : 'header'}>
+    <header id={open ? 'header-open' : 'header'} ref={headerElement}>
       <button
         onClick={() => {
           setOpen(!open)

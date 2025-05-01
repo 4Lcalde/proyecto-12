@@ -1,4 +1,5 @@
-#header {
+#header,
+#header-open {
   display: flex;
   align-items: center;
   height: 7svh;
