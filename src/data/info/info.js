@@ -1,9 +1,3 @@
-export const avatarProfiles = [
-  { name: 'man', url: '/assets/avatars/man.jpg' },
-  { name: 'woman', url: '/assets/avatars/woman.jpg' },
-  { name: 'other', url: '/assets/avatars/other.jpg' }
-]
-
 export const selectDificulty = [
   { value: '', text: 'Seleccionar' },
   { value: 'mixed', text: 'Mixto' },

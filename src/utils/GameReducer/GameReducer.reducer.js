@@ -1,7 +1,3 @@
-import { createContext } from 'react'
-
-const userContext = createContext()
-
 export const INITIAL_GAME_STATE = {
   started: false,
   currentQuestion: {},

@@ -28,8 +28,11 @@
   font-weight: 700;
   animation-name: introduction;
   animation: introduction ease-out 1.5s;
+  padding: 0 var(--padding-l);
+  text-align: center;
 }
 
 #h1-global-title > span {
   color: var(--text-highlight);
+  white-space: nowrap;
 }

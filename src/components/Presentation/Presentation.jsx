@@ -13,9 +13,10 @@ const Presentation = ({ dispatch }) => {
           <h4 className='h4-global-title'>Las reglas son sencillas:</h4>
           <ul>
             <li className='p-global'>
-              Has seleccionado jugar en nivel{' '}
+              Has seleccionado jugar en nivel
               <span>
-                {JSON.parse(localStorage.getItem('dataUserTrivial')).level}
+                {JSON.parse(localStorage.getItem('dataUserTrivial')).level ||
+                  'mixed'}
               </span>
             </li>
 

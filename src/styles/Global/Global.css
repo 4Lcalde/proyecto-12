@@ -55,6 +55,7 @@ body.chakra-ui-light {
 
 .p-error {
   color: var(--text-error);
+  text-align: center;
 }
 
 /* BOTONES */

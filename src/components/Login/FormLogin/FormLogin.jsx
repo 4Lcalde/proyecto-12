@@ -1,7 +1,6 @@
-import React, { useReducer, useState } from 'react'
+import React, { useReducer } from 'react'
 import { useForm } from 'react-hook-form'
 import { avatarProfiles, selectDificulty } from '../../../data/info/info'
-import { Button } from '@chakra-ui/react'
 import './FormLogin.css'
 
 import {
@@ -12,14 +11,13 @@ import { useNavigate } from 'react-router-dom'
 
 const FormLogin = () => {
   const [state, dispatch] = useReducer(reducerLoginData, INITIAL_LOGIN_STATE)
-  const { valueName, valueLevel, valueAvatar } = state
+  const { valueName, valueLevel } = state
   const navigate = useNavigate()
 
-  const { handleSubmit, register, formState, setValue, watch } = useForm({
+  const { handleSubmit, register, formState } = useForm({
     defaultValues: {
       name: '',
-      level: '',
-      avatar: ''
+      level: ''
     }
   })
 
@@ -29,7 +27,6 @@ const FormLogin = () => {
     navigate(0)
   }
 
-  register('avatar', { required: 'Debes seleccionar un avatar' })
   return (
     <form id='form-login' onSubmit={handleSubmit(onSubmit)}>
       <h2 className='h2-global-title'>Cuentanos algo sobre tí</h2>
@@ -95,38 +92,6 @@ const FormLogin = () => {
         </button>
       </div>
 
-      {/* Avatar */}
-      <div className='div-login-element'>
-        <label htmlFor='avatar'>Elige tu avatar</label>
-        <div
-          className={valueAvatar ? 'choose-avatar open' : 'choose-avatar close'}
-        >
-          {avatarProfiles.map((avatar) => (
-            <img
-              key={avatar.name}
-              src={avatar.url}
-              className={`avatar-login-page ${
-                watch('avatar') === avatar.url ? 'selected' : ''
-              }`}
-              onClick={() =>
-                setValue('avatar', avatar.url, { shouldValidate: true })
-              }
-              alt={avatar.name}
-            />
-          ))}
-        </div>
-        {formState.errors.avatar && (
-          <p className='p-error'>{formState.errors.avatar.message}</p>
-        )}
-
-        <button
-          className='add-info'
-          type='button'
-          onClick={() => dispatch({ type: 'CHANGE_AVATAR' })}
-        >
-          {valueAvatar ? '-' : '+'}
-        </button>
-      </div>
       <button className='general-button' type='submit'>
         Confirmar
       </button>
